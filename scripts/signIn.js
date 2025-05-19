@@ -1,38 +1,38 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-
-  <title>Muhktar's sign-in page</title>
-
-
-  <meta name="viewport"
-    content="width=device-width,initial-scale= 1.0">
-
-    
-<link rel="stylesheet" href="styles/size320-425.css">
-<link rel="stylesheet" href="styles/size425-768.css">
-<link rel="stylesheet" href="styles/size768-1000.css">
-<link rel="stylesheet" href="styles/size1000.css">
-
-  
 
 
 
-</head>
+document.querySelectorAll(".changer").addEventListener("click", () => {
+  visibleText();
+});
 
 
-<body>
 
+const visibleText = () => {
+  let text = document.querySelector(".input-for-eye");
 
-  <div class="mainDiv">
+  if (text.type === "password") {
+    text.type = "text";
+  } else {
+    text.type = "password";
+  }
+};
 
-    <h1 class="rahba">
-       <div style="color: rgb(217, 185, 0); font-size: 23px; font-weight:bold;">Rahba</div>
-       <div style="font-size: 15px;">Choose Your Products</div>
-    </h1>
-    <div class="mainBody">
+console.log(document.querySelector(".input-for-eye").type);
+
+const changingTitle = setInterval(() => {
+  if (document.title === "Muhktar's sign-in page") {
+    document.title = "Rahba Products";
+  } else {
+    document.title = "Muhktar's sign-in page";
+  }
+}, 3000);
+
+changingTitle();
+
+document.querySelector(".js-reg").addEventListener("click", () => {});
+
+document.querySelector('.js-mainDiv') = `
+           <div class="mainBody">
 
 
         <div class="top-section">
@@ -124,12 +124,5 @@
 
       <div style="margin: 10px 0px 0px 0px;"> Copyright &#169; 2022 Ghiz Online Store</div>
     </div>
+`;
 
-  </div>
-
-
-  <script src="scripts/signIn.js"></script>
-</body>
-
-
-</html>

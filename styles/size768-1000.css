@@ -1,29 +1,24 @@
-@media screen and (min-width: 1000px){
+@media screen and (max-width: 1000px) and ( min-width: 768px){
  body{
-  font-family:roboto;
+  font-family: roboto;
   font-size: 12px;
-  background-color: white;
+  background: linear-gradient(60deg black,white,grey,black);
+  width: 95vw;
+  height: 95vh;
   justify-content:center;
-  /* these are the styles provided by the ai tool that i currrently use 
-   background-image: url('https://cdn.pixabay.com/photo/2015/09/18/19/03/abstract-557586_1280.jpg'); */
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  /**/
-  margin: 0px 0px 0px 0px;
   align-items: center;
   display: flex;
 }
 
 .mainDiv{
  /*background-color: rgb(211, 211, 211);*/
- display: flex;
- width: 100%;
- max-width: 1200px;
+ display: inline-flex;
+ max-width: 100%;
  height: auto;
+ padding: 10px;
  box-shadow: 0px 0px 0px rgba(0,0,0,1);
  align-items: center;
- margin: auto;
+ margin: 0px 0px 0px 0px;
  justify-content: center;
 }
 
@@ -34,12 +29,11 @@
   align-items: center;
   position: fixed;
   top: -16px;
-  left:0;
+  left:0px;
   right:0px;
   justify-content: center;
   width: 100vw;
   height:10vh;
-  z-index:2;
   background-color: rgb(16, 16, 43);
 
 }
@@ -47,7 +41,7 @@
 
 .mainBody{
   display: inline-flex;
-  width: 350px;
+  width: 95%;
   height: auto;
   max-width: 450px;
   flex-direction: column;
@@ -57,9 +51,8 @@
   color:black;
   row-gap: 10px;
   margin: 0px 0px 0px 0px;
-  padding: 0px 0px 20px 0px;
+  padding: 10px;
   box-shadow: 0px 0px 0px rgba(0,0,0,1);
-  overflow-y: auto
 }
 
 
@@ -116,7 +109,7 @@
 .inputs > div > input{
   border-color: rgb(241, 128, 87) ;
   border-width: 1px;
-  display: inline-flex;
+  display:inline-flex;
   padding:6px 10px;
   border-style: solid;
   border-radius: 3px;
@@ -135,7 +128,6 @@
   box-shadow:0px 0px 0px rgba(0,0,0,1);
   color: whitesmoke;
 }
-
 .changer > svg{
   width: 20px;
  height: 20px;
@@ -158,29 +150,19 @@
   box-shadow: 0px 0px 0px rgba(0,0,0,1);
 }
 
+
+
 .check{
   color: rgb(241, 128, 87);
   display: inline-flex;
   flex-direction: row;
   width: 100%;
-  font-size: 90%;
+  font-size: 100%;
   height: auto;
-  box-shadow: 0px 0px 0px rgba(0,0,0,1);
-  column-gap: 50%;
+  column-gap: 40%;
   white-space: nowrap;
   justify-content: center;
   align-items: center;
-}
-
-.check > div > input{
-  cursor: pointer;
- transition: width 1.15s , margin-right 0.15s;
-}
-
-.check > div > input:hover{
-  width:10px;
-  margin-left: 1px;
-  margin-right: 3px;
 }
 
 .signIn{
@@ -211,6 +193,7 @@
   display: inline-flex;
   flex-direction: row;
   font-weight: bold;
+  column-gap: 8px;
   white-space: nowrap;
   width: 100%;
   height: auto;
@@ -307,6 +290,7 @@ box-shadow: 0px 0px 0px rgba(0,0,0,1);
   bottom:0px;
   right: 0px;
   left: 0px;
+  white-space: nowrap;
   padding: 5px 0px 5px 0px;
   color: whitesmoke;
   align-items: center;

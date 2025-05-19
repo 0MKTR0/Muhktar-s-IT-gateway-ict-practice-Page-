@@ -1,21 +1,19 @@
-@media(max-width: 749.9px){
+@media screen and (max-width: 425px) and ( min-width: 300px){
  body{
   font-family: roboto;
-  font-size: 12px;
+  font-size: 15px;
   background: linear-gradient(60deg black,white,grey,black);
-  width: 95vw;
-  height: 95vh;
-  justify-content:center;
-  align-items: center;
+  width: 90vw;
+  height: 85vh;
+  justify-content: center;
   display: flex;
 }
 
 .mainDiv{
  /*background-color: rgb(211, 211, 211);*/
  display: inline-flex;
- max-width: 100%;
+ max-width: 70%;
  height: auto;
- padding: 10px;
  box-shadow: 0px 0px 0px rgba(0,0,0,1);
  align-items: center;
  margin: 0px 0px 0px 0px;
@@ -28,22 +26,22 @@
   color: white;
   align-items: center;
   position: fixed;
-  top: -16px;
-  left:0px;
-  right:0px;
+  top: -20px;
+  left: 0px;
+  right : 0px;
   justify-content: center;
   width: 100vw;
-  height:10vh;
+  height: 8vh;
   background-color: rgb(16, 16, 43);
 
 }
 
 
 .mainBody{
-  display: inline-flex;
-  width: 95%;
+  display: flex;
+  width: 100%;
   height: auto;
-  max-width: 450px;
+  max-width: 768px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -52,7 +50,7 @@
   row-gap: 10px;
   margin: 0px 0px 0px 0px;
   padding: 10px;
-  box-shadow: 0px 0px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 0px rgb(220, 5, 5);
 }
 
 
@@ -63,7 +61,7 @@
   height: auto;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   padding: 3% 0px 0px 0px;
   box-shadow:0px 0px 0px rgba(0,0,0,1);
@@ -81,7 +79,6 @@
 .line2{
  border-color: rgb(241, 128, 87);
  width: 60%;
- height: auto;
  display: inline-flex;
  justify-content: center;
  align-items: center;
@@ -115,7 +112,7 @@
   border-radius: 3px;
   height: auto;
   width: 100%;
-  font-size: 14px;
+  font-size: 17px;
   visibility: visible;
 }
 
@@ -157,9 +154,9 @@
   display: inline-flex;
   flex-direction: row;
   width: 100%;
-  font-size: 100%;
+  font-size: 12px;
   height: auto;
-  column-gap: 40%;
+  column-gap: 10%;
   white-space: nowrap;
   justify-content: center;
   align-items: center;
@@ -181,7 +178,7 @@
   border: none;
   border-radius: 2px;
   padding:5px 50px;
-  font-size: 12px;
+  font-size: 13px;
   transition: padding 0.15s , margin 0.15s;
 }
 .signIn > button:hover{
@@ -205,6 +202,8 @@
  border-color: rgb(241, 128, 87);
  width: 30%;
  height: auto;
+ background-color: rgb(241, 128, 87);
+ border-radius: 5px;
  border-style: solid;
  display: inline-flex;
  border-width: 1px;
@@ -273,10 +272,11 @@ box-shadow: 0px 0px 0px rgba(0,0,0,1);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  max-width: 100%;
   height: auto;
-  font-size: 80%;
-  box-shadow: 0px 0px 0px rgba(0,0,0,1);
+  font-size: 8px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,1);
 }
 
 
@@ -286,10 +286,10 @@ box-shadow: 0px 0px 0px rgba(0,0,0,1);
   flex-direction: column;
   width: 100%;
   position: fixed;
-  font-size: 12.5px;
+  font-size: 11px;
   bottom:0px;
   right: 0px;
-  left: 0px;
+  left: -0px;
   white-space: nowrap;
   padding: 5px 0px 5px 0px;
   color: whitesmoke;
