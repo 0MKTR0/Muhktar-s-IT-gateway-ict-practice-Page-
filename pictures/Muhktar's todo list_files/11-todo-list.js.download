@@ -1,0 +1,14 @@
+const todoList = [];
+
+function addTodo() {
+  const inputElement = document.querySelector(".js-name-input");
+  const name = inputElement.value;
+  document.querySelector(".js-paragraph").innerText = `${name}`;
+
+  console.log(name);
+}
+function click(Event) {
+  if (Event.key === "Enter") {
+    addTodo();
+  }
+}
