@@ -1,0 +1,32 @@
+.bottomDiv{
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  font-size: 11px;
+  bottom:0px;
+  right: 0px;
+  left: 0px;
+  padding: 5px 0px 5px 0px;
+  color: whitesmoke;
+  align-items: center;
+  background-color: rgb(5, 19, 54);
+}
+
+.bottomText{
+  display: inline-flex;
+  flex-direction: row;
+  margin: 0px 0px 0px 0px;
+  column-gap: 10px;
+}
+.bottomText > div:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.line{
+  width: 70%;
+  max-width: 500px;
+  border-color: rgb(133, 163, 237);
+  border-radius: 999px;
+}
