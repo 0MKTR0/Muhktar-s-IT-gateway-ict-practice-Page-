@@ -1,16 +1,13 @@
-@media screen and ( max-width: 500px) and ( min-width: 425px){
+@media screen and ( max-width: 500px) and ( min-width: 100px){
  body{
   font-family: arial;
   cursor: default;
-  width: 96vw;
-  height: 96vh;
   font-size: 14px;
-  padding: px 0px 0px 0px;
+  padding: 50px 0px 0px 0px;
+  margin: 0px 10px 0px 10px;
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   /*background-attachment: fixed;*/
 }
 
@@ -20,11 +17,11 @@
   width: 100%;
   row-gap:20px;
   position: fixed;
-  font-size: 12.5px;
+  font-size: 0.75rem;
   top:0px;
   right: 0px;
   left: 0px;
-  padding: 5px 0px 13px 0px;
+  padding: 6px 0px 6px 0px;
   color: whitesmoke;
   align-items: center;
   background-color: rgb(5, 19, 54);
@@ -69,13 +66,15 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  padding: 0px 0px 0px 15px;
+  color: rgb(219, 152, 28);
 }
 
 .middle-section > div{
   display: inline-flex;
   align-items: center;
   box-shadow: 0px 0px 0px rgba(255, 0, 0, 1);
-  font-size: 25px;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -86,7 +85,7 @@
 }
 
 .search-bar > input{
-  width: 40%;
+  width: 0;
   max-width: 500px;
   min-width: 100px;
   height: 30px;
@@ -215,7 +214,7 @@
 
 
 .first-div > div > h2{
-  font-size: 21px;
+  font-size: 1.5rem;
   color: rgb(51, 84, 2);
 }
 
@@ -271,7 +270,7 @@
 
 
 
-.second-div > div > div > button{
+.second-div > div > a > button{
   padding: 3.5px 15px;
   border-radius: 4px;
   border: none;
@@ -280,7 +279,7 @@
   transition: padding 0.15s , margin 0.15s;
 }
 
-.second-div > div > div > button:hover{
+.second-div > div > a > button:hover{
   padding: 9px 19px;
   margin: -5px -4px;
 }

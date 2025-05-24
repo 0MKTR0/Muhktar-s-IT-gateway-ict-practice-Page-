@@ -93,13 +93,13 @@ document.querySelector(".placeArea").innerHTML = `
 </div>
 </div>
 
-<div>
+<a href="second-page.html">
 <button style="
     font-size: 11px;
   ">
   Place Order
 </button>
-</div>
+</a>
 `;
 
 document.querySelector(".side-div").innerHTML = `
