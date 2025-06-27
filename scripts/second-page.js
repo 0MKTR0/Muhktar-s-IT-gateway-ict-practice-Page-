@@ -1,4 +1,4 @@
-import { runTopDiv } from "./topDiv-Rahba-section.js";
+import { runTopDiv } from "./reusable-variables.js";
 
 runTopDiv(".topDiv");
 

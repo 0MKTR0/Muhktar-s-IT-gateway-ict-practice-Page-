@@ -1,0 +1,172 @@
+.topDiv{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap:20px;
+  position: fixed;
+  font-size: 12.5px;
+  top:0px;
+  right: 0px;
+  left: 0px;
+  padding: 5px 0px 13px 0px;
+  color: whitesmoke;
+  align-items: center;
+  background-color: rgb(5, 19, 54);
+  z-index: 2;
+}
+
+.top-section{
+  display: inline-flex;
+  box-shadow: 0px 0px 0px rgb(236, 0, 0);
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0px 15px 0px 0px;
+  width: 100%;
+  }
+
+.top-section > div{
+  color: white;
+  display:flex;
+  flex-direction:row;
+  
+}
+
+.angledDraw{
+  border-right:2px solid;
+  border-bottom: 2px solid;
+  margin: 3px 0px 0px 0px;
+  height: 5px;
+  width: 5px;
+  transform: rotate(45deg);
+}
+
+.angledDraw:hover{
+   opacity: 0.7;
+   cursor: pointer;
+}
+
+
+
+
+.middle-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 0px 0px 15px;
+  color: rgb(219, 152, 28);
+}
+
+.middle-section > div{
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0px 0px 0px rgba(255, 0, 0, 1);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.search-bar{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar > input{
+  width: 40%;
+  max-width: 500px;
+  min-width: 100px;
+  height: 30px;
+  background: linear-gradient(to right,white , white, grey,grey);
+  background-size: 150% 150%;
+  animation: gradient 6s ease infinite;
+  border-radius: 9px;
+  padding: 0px 10px 0px 10px;
+  color: grey;
+  border: none;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.three-line-div{
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  box-shadow: 0px 0px 0px rgba(0,0,0,1);
+  height:100%;
+  margin: 0px -10px 0px 0px;
+  height: 30px;
+  z-index: 2;
+  background: linear-gradient(to right , white ,whitesmoke);
+  background-size: 150% 150%;
+  animation: gradient 4s ease infinite;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  transition: opacity 0.15s;
+}
+
+.three-line-div > svg:hover{
+  opacity: 0.8;
+}
+
+
+.search-icon{
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  box-shadow: 0px 0px 0px rgba(0,0,0,1);
+  height:100%;
+  margin: 0px 0px 0px -07px;
+  height: 30px;
+  z-index: 2;
+  background: linear-gradient(to right , grey);
+  background-size: 150% 150%;
+  animation: gradient 4s ease infinite;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  transition: opacity 0.15s;
+}
+.search-icon > svg:hover{
+  opacity: 0.8;
+}
+
+
+.middle-section > .icons > div > svg{
+  width: 25px;
+  height: 25px;
+  fill: transparent;  
+  stroke: white; /* Border color */
+  stroke-width: 1px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.middle-section > .icons > div:hover{
+  opacity:0.7; /* Fill color on hover */
+}
+
+.icons{
+  display: flex;
+  column-gap: 10px;
+  margin: 0px 30px 0px 0px;
+}
+
+
+
+.bottom-section{
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+}
+
+.bottom-section > div{
+  flex-direction: row;
+  display:flex;
+}
+.bottom-section > div:hover{
+  opacity: 0.8;
+}
