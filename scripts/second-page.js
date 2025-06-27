@@ -1,3 +1,7 @@
+import { runTopDiv } from "./topDiv-Rahba-section.js";
+
+runTopDiv(".topDiv");
+
 document.querySelector(".changer").addEventListener("click", () => {
   visibleText();
 });

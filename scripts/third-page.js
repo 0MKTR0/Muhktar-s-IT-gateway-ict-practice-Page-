@@ -134,7 +134,7 @@ document.querySelector(".side-div").innerHTML = `
 
         <div class="sideDiv-flour">
           <div>
-            <img src="pictures/Rectangle 176.png" class="liveImages">
+            <img src="pictures/ingredientsAndItems/Rectangle 176.png" class="liveImages">
           </div>
 
 
@@ -260,10 +260,10 @@ document.querySelector(".side-div").innerHTML = `
           <div style="
              display: flex;
              flex-direction: row;
-             column-gap: 7px;
+             column-gap: 7px;<
              align-items: center;
             ">
-              <div> <img src="pictures/question.png" class="icon"></div>
+              <div> <img src="pictures/ingredientsAndItems/question.png" class="icon"></div>
               <div style="
                 font-weight: 700;
               "> Help</div>
