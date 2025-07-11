@@ -1,10 +1,24 @@
+export const appImages = [
+  "pictures/ingredientsAndItems/apple-image.png",
+
+  "pictures/ingredientsAndItems/facebook.png",
+
+  "pictures/ingredientsAndItems/snapchat.png",
+
+  "pictures/ingredientsAndItems/gmail.png",
+
+  "pictures/ingredientsAndItems/Instagram.png",
+];
+
 export function runTopDiv(topDivClass) {
   document.querySelector(topDivClass).innerHTML = `
   <div class="top-section">
     <div>
       <div>$USD</div>
         <div> &#160; </div>
-      <div class="angledDraw"></div>
+      <div class="angledDraw">
+        <img src="pictures/ingredientsAndItems/dropDownVector.png">
+      </div>
 
       &#160;
 
@@ -14,7 +28,9 @@ export function runTopDiv(topDivClass) {
       &#160;
       <div>English</div> 
       &#160;
-        <div class="angledDraw"></div>
+        <div class="angledDraw">
+          <img src="pictures/ingredientsAndItems/dropDownVector.png">
+        </div>
         &#160;
     </div>
 
@@ -24,28 +40,23 @@ export function runTopDiv(topDivClass) {
       &#160;
       <div>Morocco</div>
       &#160;
-      <div class="angledDraw"></div>
+      <div class="angledDraw">
+         <img src="pictures/ingredientsAndItems/dropDownVector.png">
+      </div>
       &#160;
     </div>
   </div>
 
 
   <div class="middle-section">
-        <div>
-          Rahba
+        <div class=" rahba-icons">
+          <img src="pictures/rahbaLogo.png">
         </div>
 
     <div class="search-bar">
 
       <div class="three-line-div">    
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="10">
-          <!-- First line (full width) -->
-          <rect x="5" y="0" width="20" height="3" fill="black" />
-          <!-- Second line (50% width of the first) -->
-          <rect x="7.5" y="4" width="15" height="3" fill="black" />
-          <!-- Third line (50% width of the second) -->
-          <rect x="11.25" y="8" width="7.5" height="2" fill="black" />
-        </svg>
+        <img src="pictures/ingredientsAndItems/threeeLineVector.png">
       </div>
 
           <input placeholder="Search" style="
@@ -63,7 +74,7 @@ export function runTopDiv(topDivClass) {
 
     </div>
 
-    <div class="icons">
+    <div class="icons rahba-icons">
 
       <div>     
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -95,13 +106,17 @@ export function runTopDiv(topDivClass) {
     <div> 
       <div> Our Product </div>
       &#160;
-      <div class="angledDraw"></div>
+      <div class="angledDraw">
+        <img src="pictures/ingredientsAndItems/dropDownVector.png">
+      </div>
     </div>
 
     <div> 
       <div>Trending</div> 
       &#160;
-      <div class="angledDraw"></div>
+      <div class="angledDraw">
+        <img src="pictures/ingredientsAndItems/dropDownVector.png">
+      </div>
     </div>
 
         
@@ -109,14 +124,184 @@ export function runTopDiv(topDivClass) {
     <div> 
       <div>Sell</div> 
       &#160;
-      <div class="angledDraw"></div>
+      <div class="angledDraw">
+        <img src="pictures/ingredientsAndItems/dropDownVector.png">
+      </div>
     </div>
 
-    <div> About Us </div>
+    <a href="#theAboutDescription"> About Us </a>
 
     <div> Customer Service </div>
 
   </div> 
 
       `;
+}
+
+export function runLastDiv(lastDivClass) {
+  document.querySelector(lastDivClass).innerHTML = `
+  
+    <div class="lD-first">
+
+      <div class="lDF-top"> Sign Up For Our Newsletter :</div>
+
+      <div class="lDF-input">
+        <input type="text" placeholder="Email-Address">
+      </div>
+
+      <div class="lDF-button">
+        <button> Sign-Up</button>
+      </div>
+
+    </div>
+
+        <hr class="linee">
+
+    <div class="lD-second">
+
+      <div class="lDS-left">
+        
+        <div class="lDSL-top">
+
+          <div class="lDSLT-top">
+            Follow Us
+          </div>
+
+          <div class="lDSLT-bottom"></div>
+
+        </div>
+
+        <div class="lDSL-bottom">
+
+          <div class="lDSLB-top">Mobile Apps</div>
+
+          <div class="lDSLB-bottom">
+
+            <div class="lDSLBB-left">
+              <img src="pictures/ingredientsAndItems/QR-code.png">
+            </div>
+
+            <div class="lDSLBB-right">
+              
+              <div class="google">
+                <img src="pictures/ingredientsAndItems/google-text.png">
+              </div>
+
+              <div class="apple">
+
+                <img class="apple1"src="pictures/ingredientsAndItems/appleCongestion.png">
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="lDS-right">
+
+        <div class="lDSR-fColumn">
+          <div class="colDiv">About</div>
+
+          <div class="colUl">
+            <div>About Us</div>
+
+          <div>Terms & Conditions</div>
+
+          <div>Loyalty & Referral Program</div>
+
+          <div>Privacy Policy</div>
+
+          <div>Shipping Policy</div>
+
+          <div>Refund Policy</div>
+
+          <div>Terms Of Service</div>
+
+          <div>Where To Buy</div>
+          </div>
+
+        </div>
+
+        <div class="lDSR-sColumn">
+          <div class="colDiv"> Customer Service</div>
+
+          <div class="colUl">
+            
+            <div>Contact Us</div>
+
+            <div>Delivery</div>
+
+            <div>Frequently Asked Questions</div>
+          </div>
+
+        </div>
+
+        <div class="lDSR-tColumn">
+
+          <div class="colDiv"> Resources</div>
+
+          <div class="colUl">
+            
+            <div>Blog</div>
+
+            <div>Community</div>
+
+            <div>Accessibility</div>
+
+            <div>Sales & Offers</div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+        <hr class="linee">
+    <div class="lD-third">
+      Copyright &#169; 2022 Ghiz Online Store
+    </div>
+  `;
+}
+
+export function formatTwoDigits(num) {
+  return num.toString().padStart(2, "0");
+}
+
+export function fillsMobileApps() {
+  let html = "";
+
+  appImages.forEach((image) => {
+    html += `
+    <div class="lDSLTB-image">
+        <img src=${image}>
+      </div>
+    `;
+
+    document.querySelector(".lDSLT-bottom").innerHTML = html;
+  });
+}
+
+export function hidesFixedBar() {
+  let scrollPos = window.pageYOffset;
+
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+
+    if (scrollPos > currentScrollPos) {
+      document.getElementById("topDivId").style.top = "0";
+    } else {
+      document.getElementById("topDivId").style.top = "-120px";
+    }
+
+    scrollPos = currentScrollPos;
+    console.log();
+  };
 }

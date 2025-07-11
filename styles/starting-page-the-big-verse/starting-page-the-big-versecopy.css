@@ -1,0 +1,557 @@
+
+body{
+  padding: 150px 10px 0px 10px;
+  font-family: roboto;
+  background-color: rgb(255,255,250);
+}
+
+.mainDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 0px rgba(0,0,0,1);
+  row-gap: 40px;
+}
+
+.largeBackground{
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  box-shadow: 0px 0px 1px rgba(0,0,0,1);
+}
+
+.largeBackground > img{
+  max-width: 100%;
+}
+
+.ourProduct{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.ingredientsRow{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: center;
+  scrollbar-width: none;
+  overflow: auto;
+}
+
+.firstIR{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 0px rgba(0,0,0,1);
+}
+
+.firstIR > div > img{
+  width: 100px;
+  box-shadow: 0px 0px 0px rgba(0,0,0,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.orangeAspect{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 226, 216, 0.9);
+  justify-content: center;
+  row-gap: 5px;
+  width: 96.85%;
+  padding: 10px;
+}
+
+
+.topOA,
+.newRelease-top,
+.featuredProducts-top,
+.bestSellers-top{
+  display: flex;
+  flex-direction: row;
+  color: orange;
+  font-size: 0.7rem;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+  justify-content: space-between;
+}
+
+.deals,
+.nRR-text,
+.fPT-text{
+  font-weight: bold;
+  color: black;
+  font-size: 0.9rem;
+}
+
+
+.bottomOA{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottomOA-Left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  row-gap: 20px;
+  font-size: 0.9rem;
+}
+
+.bottomOA-LeftTop{
+  text-align: justify;
+}
+
+.bottomOA-LeftBottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+  font-weight: bold;
+}.bottomOA-LeftBottom > div{
+  color: white;
+  background-color: gold;
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 6px 4px 4px;
+  border-radius: 8px;
+}
+
+
+.bottomOA-Right{
+  display: flex;
+  flex-direction: row;
+  scrollbar-Width: none;
+  overflow: auto;
+  padding: 0px 0px 0px 10px;
+  width: 50%;
+  background-color: rgb(250, 250, 250);
+  column-gap: 10px;
+}
+
+/*.bottomOA-RightFirst{
+  padding: ;
+}*/
+
+.bottomOA-RightFirst{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.bottomOA-RightFirst{
+  padding: 10px 0px 0px 0px;
+  row-gap: 4px;
+}
+
+nRB-firstImage{
+  width: 100%;
+}
+
+.bottomOA-RImage > img,
+.nRB-firstImage > img,
+.fPB-Image > img,
+.bSB-image > img{
+  width: 140px;
+}
+
+.bottomOA-RText,
+.fPB-Text,
+.nRB-Text,
+.bSB-text{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /*text-align: justify;*/
+}
+
+.bottomOA-RightFirst > .bottomOA-RImage > img{
+  width: 80px;
+}
+
+
+
+.newReleaseRow{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  box-shadow: 0px 0px 0px rgba(0,0,0,1);
+  row-gap: 15px;
+}
+
+.newRelease-bottom{
+  display: flex;
+  padding: 0px 0px 0px 10px;
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: center;
+  scrollbar-width: none;
+  overflow: auto;
+}
+
+
+.featuredProducts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.featuredProducts-bottom{
+  display: grid;
+  width: 100%;
+  padding: 0px 0px 0px 20px;
+  align-items: first baseline;
+  margin: 20px 0px 0px 0px;
+  column-gap: 20px;
+  row-gap: 30px;
+  scrollbar-width: none;
+  overflow: auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.fPB-first{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.bestSellers{
+  width: 100%;
+}
+.bestSellers-bottom{
+  display: flex;
+  flex-direction: row;
+  scrollbar-width: none;
+  overflow: auto;
+  column-gap: 20px;
+}
+
+.manyAwaits{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255,165,0,0.4);
+  padding: 15px;
+  row-gap: 15px;
+}
+
+.mA-bottom{
+  flex-direction: row;
+  display: flex;
+  scrollbar-width: none;
+  overflow: auto;
+  column-gap: 25px;
+}
+
+.mA-bottom > div > img{
+ width: 100%;
+}
+
+.secondMainImage{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 0px 0px 0px;
+  row-gap: 40px;
+  
+}
+
+.sMI-image{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.sMI-image > img{
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.sMI-textSide{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.about{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.sMI-textSide > p{
+  text-align: justify;
+}
+
+
+
+.button1 > button{
+  color: white;
+  font-size: 0.9rem;
+  background-color: orange;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 25px;
+  transition: padding 0.15s , font-size 0.15s , margin 0.15s;
+}.button1:hover > button{
+  padding: 12px 27px;
+  font-size: 1rem;
+  margin: -2px 0px -4px 0px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+
+.brandFeatures{
+  display: flex;
+  flex-direction: row;
+  align-items: first baseline;
+}
+
+.features{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 9px;
+  width: 40%;
+  box-shadow: 0px 0px 0px rgba(0,0,0,1);
+}
+
+.f-image{
+  background-color: rgb(255, 166, 0, 0.15);
+  border-radius: 9999px;
+  padding: 45px 50px;
+}
+
+.f-image > img{
+  width: 27px;
+}
+
+.f-feature{
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.f-text{
+  text-align: center;
+}
+
+
+.lastDiv{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  padding: 18px 10px;
+  color: white;
+  background-color: rgb(3, 3, 43);
+  width: 97%;
+}
+
+.lD-first{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  row-gap: 15px;
+}
+.lDF-top{
+  font-size: 0.95rem;
+  word-wrap: nowrap;
+}
+
+.lDF-input{
+  width: 100%;
+}
+.lDF-input > input{
+  width: 100%;
+  padding: 5px;
+}
+
+.lDF-button > button{
+  padding: 5px 40px;
+  font-size: 0.95rem;
+  background-color: rgb(255, 94, 0);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  transition: padding 0.15s , margin 0.15s , font-size 0.15s;
+}.lDF-button > button:hover{
+  padding: 7px 45px;
+  margin: -2px -5px;
+}
+
+.linee{
+  width: 70%;
+  height: 1px;
+  border: none;
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
+.lD-second{
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 0px rgb(255, 0, 0);
+  justify-content: space-between;
+}
+
+.lDS-left{
+  display: flex;
+  box-shadow: 0px 0px 0px rgb(255, 0, 0);
+  width: 40%;
+  row-gap: 50px;
+  flex-direction: column;
+}
+
+.lDSL-top{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 0.9rem;
+}
+
+.lDSLT-bottom{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.lDSLTB-image{
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 12px 20px;
+  border-radius: 999px;
+}
+
+.lDSLTB-image > img{
+  width: 17px;
+  max-width: 100%;
+}
+
+.lDSL-bottom{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.lDSLB-top{
+  font-size: 0.9rem;
+}
+
+.lDSLB-bottom{
+  display: flex;
+  flex-direction: row;
+  column-gap: 2.5px; 
+}
+
+
+.lDSLBB-left > img{
+  width: 86px;
+}
+
+.lDSLBB-right{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  width: 50%;
+}
+
+.google{
+  background-color: white;
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+}
+.google > img{
+  max-width: 100%;
+}
+
+.apple{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  column-gap: 5px;
+  border-radius: 3px;
+  padding: 4.5px;
+}
+.apple1{
+  width: 20px;
+  max-width: 50%;
+}
+.apple2{
+  width: 50px;
+}
+
+.lDS-right{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  padding: 0px;
+  justify-content: space-evenly;
+}
+
+.lDSR-fColumn,
+.lDSR-sColumn,
+.lDSR-tColumn{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 0px rgb(255, 4, 238);
+  row-gap: 5px;
+}
+
+
+.colDiv{
+  font-weight: 700;
+  margin: 0px 0px 0px -10px;
+}
+
+.colUl{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.colUl > div{
+ white-space: nowrap;
+ font-size: 0.75rem;
+}
+
+
+
+
+
+/*.ratingStars{
+  display: flex;
+  justify-content: center;
+}*/
+.ratingStars > img{
+  max-width: 50%;
+}

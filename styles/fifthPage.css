@@ -1,0 +1,155 @@
+body{
+  padding: 130px 0px 500px 0px;
+  background-color: white;
+}
+
+
+
+
+.mainDiv{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  box-shadow: 0px 0px 3px rgba(0,0,0,1);
+}
+
+.oatFlourDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.oFD-top > h3{
+  box-shadow: 0px 0px 0px rgb(0, 255, 76);
+  margin: 0px;
+}
+
+.oFD-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.oFD-left{
+  width: 65%;
+}
+
+.oFD-left > img{
+  width: 100%;
+}
+
+.oFD-right{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  row-gap: 10px;
+  box-shadow: 0px 0px 0px rgb(255, 0, 0);
+}
+
+.costTenLine{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 7px;
+  font-size: 1.9vw;
+  color: black;
+}
+
+.stockTen{
+  background-color: rgb(219, 152, 28);
+  color: white;
+  font-weight: bold;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.buttonOne > button{
+  background-color: rgb(219, 152, 28);
+  font-family: roboto;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 50px;
+  transition: padding 0.15s, margin 0.15s;
+}.buttonOne > button:hover{
+  padding: 9px 55px;
+  margin: 0px 0px 0px -5px;
+}
+
+.featuredProducts{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 5px;
+}
+
+.fP-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fP-top > div{
+  font-weight: bold;
+  font-size: 2.1vw;
+}
+
+.fPT-text{
+  color: rgb(219, 152, 28);
+  font-weight: 400;
+}
+
+.fP-bottom{
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  column-gap: 50px;
+  width: 96.7%;
+  padding: 0px 0px 0px 20px;
+  scrollbar-width: none;
+}
+
+.fPB-first{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fPB-Text{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.fPB-Image{
+  width: 200%;
+}
+
+.fPB-Image > img{
+  max-width: 100%;
+}
+
+.ratingStars > img{
+  max-width: 100%;
+}
+
+/*.backTest{
+  background-image: url('../pictures/bigimage1.jpg');
+  background-position: center;
+  min-height: 200px;
+  background-repeat: none;
+  background-attachment: fixed;
+  background-size: cover;
+}
+*/
+
+.backTest{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  white-space: nowrap;
+  box-shadow: 0px 0px 3px rgba(0,0,0,1);
+  justify-content: center;
+  align-items: center;
+  animation: 10s colors ease infinite;
+}
